@@ -12,7 +12,7 @@ from torchvision.transforms import ToTensor, Lambda, ToPILImage
 # Filepath = root, training indicator true, downloads if not available
 # Option to transform to 3d tensors
 training_data = datasets.CIFAR10(
-    root = "data",
+    root = ".data",
     train = True,
     download = True,
     transform = ToTensor(),
@@ -24,7 +24,7 @@ training_data = datasets.CIFAR10(
 # Filepath = root, training indicator false, downloads if not available
 # Option to transform to 3d tensors
 testing_data = datasets.CIFAR10(
-    root = "data",
+    root = ".data",
     train = False,
     download = True,
     transform = ToTensor(),
